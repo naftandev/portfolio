@@ -1,0 +1,67 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px 0;
+  overflow: hidden;
+
+  .aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .aboutProfileContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .aboutPicture {
+    width: 200vw;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    left: calc(-50vw);
+    overflow: hidden;
+    transform: rotate(-7.5deg);
+    background-color: var(--secondaryColor);
+  }
+
+  .aboutSocialNetworksContainer {
+    display: flex;
+    gap: 15px;
+    padding-right: 10px;
+    justify-content: flex-end;
+
+    .aboutSocialNetwork {
+      height: 20px;
+      filter: invert(1);
+    }
+  }
+
+  .aboutInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+
+    p,
+    strong,
+    span {
+      color: var(--secondaryColor);
+    }
+
+    li {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .aboutListCheck {
+      height: 15px;
+      color: var(--tertiaryColor);
+    }
+  }
+}

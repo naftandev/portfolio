@@ -1,0 +1,14 @@
+.sectionTitle {
+  width: max-content;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  background-color: var(--tertiaryColor);
+
+  span {
+    font-family: 'Goldman', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--primaryColor);
+  }
+}

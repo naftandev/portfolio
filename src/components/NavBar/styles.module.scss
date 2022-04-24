@@ -1,0 +1,35 @@
+.navBar {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+
+  .navBarTitle {
+    font-family: 'Audiowide', cursive;
+    font-size: 28px;
+    color: var(--secondaryColor);
+    text-shadow: var(--textShadow);
+    -webkit-text-stroke: 0.1px var(--tertiaryColor);
+  }
+
+  .navBarMenuIcon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .navBarMenuIconItem {
+    width: 28px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: var(--secondaryColor);
+    box-shadow: var(--boxShadow);
+  }
+}

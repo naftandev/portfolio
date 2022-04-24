@@ -1,0 +1,25 @@
+:root {
+  --primaryColor: #282C34;
+  --secondaryColor: #FFFFFF;
+  --tertiaryColor: #61DAFB;
+
+  --boxShadow: 1px 1px 5px 0 var(--primaryColor);
+  --textShadow: 1px 1px 5px var(--primaryColor);
+}
+
+:global(*) {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.app {
+  section:nth-child(even) {
+    background-color: var(--primaryColor);
+  }
+
+  section:nth-child(odd) {
+    background-color: var(--secondaryColor);
+  }
+}

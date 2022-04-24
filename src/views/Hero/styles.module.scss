@@ -1,0 +1,40 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroPicture {
+  display: flex;
+  height: 100%;
+
+  img {
+    filter: brightness(65%);
+  }
+}
+
+.heroInfoContainer {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
+
+.heroName,
+.heroRole {
+  text-transform: uppercase;
+  font-family: 'Goldman', cursive;
+  color: var(--secondaryColor);
+  text-shadow: var(--textShadow);
+}
+
+.heroName {
+  font-size: 30px;
+}
+
+.heroRole {
+  font-size: 18px;
+  -webkit-text-stroke: 0.7px var(--tertiaryColor);
+}
