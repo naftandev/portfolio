@@ -2,6 +2,15 @@
   --primaryColor: #282C34;
   --secondaryColor: #FFFFFF;
   --tertiaryColor: #61DAFB;
+  --htmlColor: #E85E28;
+  --cssColor: #249CDA;
+  --jsColor: #F7DF1E;
+  --reactColor: #61DAFB;
+  --nodeColor: #689F63;
+  --sassColor: #C76494;
+  --gitColor: #F54D27;
+  --npmColor: #CB3837;
+  --npmColor: #CB3837;
 
   --boxShadow: 1px 1px 5px 0 var(--primaryColor);
   --textShadow: 1px 1px 5px var(--primaryColor);
@@ -15,11 +24,5 @@
 }
 
 .app {
-  section:nth-child(even) {
-    background-color: var(--primaryColor);
-  }
-
-  section:nth-child(odd) {
-    background-color: var(--secondaryColor);
-  }
+  position: relative;
 }

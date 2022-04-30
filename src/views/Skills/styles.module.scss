@@ -1,3 +1,92 @@
 .skills {
   padding: 20px 0;
+  background-color: var(--secondaryColor);
+
+  .skillsContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skillsInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 20px 30px;
+    position: relative;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      background-color: var(--primaryColor);
+      opacity: 0.5;
+    }
+
+    .skillsInfoItem {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      p {
+        text-align: center;
+      }
+
+      .skillsInfoItemIcon {
+        height: 60px;
+        color: var(--primaryColor);
+      }
+    }
+  }
+
+  .skillsTechnologiesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px 20px 0;
+    justify-items: center;
+
+    .skillsTechnologieIcon {
+      max-width: 50px;
+      max-height: 50px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .skillsTechnologieIconHtml {
+      color: var(--htmlColor);
+    }
+    .skillsTechnologieIconCss {
+      color: var(--cssColor);
+    }
+    .skillsTechnologieIconJs {
+      color: var(--jsColor);
+    }
+    .skillsTechnologieIconReact {
+      color: var(--reactColor);
+    }
+    .skillsTechnologieIconNode {
+      color: var(--nodeColor);
+    }
+    .skillsTechnologieIconSass {
+      color: var(--sassColor);
+    }
+    .skillsTechnologieIconGit {
+      color: var(--gitColor);
+    }
+    .skillsTechnologieIconNpm {
+      color: var(--npmColor);
+    }
+  }
+
+  .skillsConstantlyLearning {
+    padding-top: 20px;
+    text-align: center;
+  }
 }

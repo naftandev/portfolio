@@ -3,12 +3,13 @@
   flex-direction: column;
   gap: 25px;
   padding: 20px 0;
+  background-color: var(--primaryColor);
   overflow: hidden;
 
   .aboutContent {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
 
   .aboutProfileContainer {
@@ -31,6 +32,7 @@
   .aboutSocialNetworksContainer {
     display: flex;
     gap: 15px;
+    margin: -10px 0 10px;
     padding-right: 10px;
     justify-content: flex-end;
 

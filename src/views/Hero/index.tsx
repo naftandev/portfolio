@@ -1,7 +1,6 @@
 import styles from './styles.module.scss'
 // import { useEffect, useState } from 'react'
 
-import NavBar from '../../components/NavBar'
 import DoubleArrow from '../../components/DoubleArrow'
 import getS3Statics from '../../utils/getS3Statics'
 
@@ -24,7 +23,6 @@ const Hero = () => {
         <source media='(max-height: 2514px)' srcSet={getS3Statics({ groupName: 'images', filePath: 'hero-3353x2514.jpg' })} />
         <img src={getS3Statics({ groupName: 'images', filePath: 'hero-3353x2514.jpg' })} alt='Software developer' />
       </picture>
-      <NavBar />
       <div className={styles.heroInfoContainer}>
         <h1 className={styles.heroName}>Jhean Pacheco</h1>
         <h2 className={styles.heroRole}>Frontend Developer</h2>

@@ -1,13 +1,13 @@
-.navBar {
+.header {
   width: 100%;
   display: flex;
   padding: 10px;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 0;
+  z-index: 1;
 
-  .navBarTitle {
+  .headerTitle {
     font-family: 'Audiowide', cursive;
     font-size: 28px;
     color: var(--secondaryColor);
@@ -15,7 +15,7 @@
     -webkit-text-stroke: 0.1px var(--tertiaryColor);
   }
 
-  .navBarMenuIcon {
+  .headerMenuIcon {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -23,13 +23,13 @@
     &:hover {
       cursor: pointer;
     }
-  }
 
-  .navBarMenuIconItem {
-    width: 28px;
-    height: 4px;
-    border-radius: 1px;
-    background-color: var(--secondaryColor);
-    box-shadow: var(--boxShadow);
+    .headerMenuIconItem {
+      width: 28px;
+      height: 4px;
+      border-radius: 1px;
+      background-color: var(--secondaryColor);
+      box-shadow: var(--boxShadow);
+    }
   }
 }
