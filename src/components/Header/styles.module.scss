@@ -8,7 +8,7 @@
   z-index: 1;
 
   .headerTitle {
-    font-family: 'Audiowide', cursive;
+    font-family: var(--tertiaryFont);
     font-size: 28px;
     color: var(--secondaryColor);
     text-shadow: var(--textShadow);

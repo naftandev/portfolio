@@ -1,3 +1,55 @@
 .projectCard {
-  
+  max-width: 350px;
+  display: grid;
+  grid-template-rows: 350px auto;
+  border-radius: 10px;
+  padding: 3px;
+  position: relative;
+  background-color: var(--secondaryColor);
+
+  .projectCardExternalLinkIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    figure {
+      width: 35px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .projectCardPicture {
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 450px;
+      position: absolute;
+      left: -50px;
+      transform: rotate(15deg) scale(1);
+      filter: brightness(90%);
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: rotate(15deg) scale(1.1);
+      }
+    }
+  }
+
+  .projectCardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    text-align: center;
+
+    strong {
+      font-family: var(--secondaryFont);
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
 }

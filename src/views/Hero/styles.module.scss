@@ -25,7 +25,7 @@
 .heroName,
 .heroRole {
   text-transform: uppercase;
-  font-family: 'Goldman', cursive;
+  font-family: var(--secondaryFont);
   color: var(--secondaryColor);
   text-shadow: var(--textShadow);
 }
