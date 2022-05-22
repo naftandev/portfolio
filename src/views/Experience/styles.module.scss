@@ -1,0 +1,11 @@
+.experience {
+  padding: 20px 0;
+  background-color: var(--secondaryColor);
+}
+
+.experienceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}

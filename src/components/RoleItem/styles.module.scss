@@ -1,0 +1,58 @@
+.roleItem {
+  display: flex;
+  gap: 20px;
+
+  &:not(:last-child) {
+    .roleItemDetail {
+      padding-bottom: 30px;
+    }
+  }
+
+  &:last-child {
+    .roleItemPathLine {
+      display: none;
+    }
+  }
+}
+
+.roleItemPath {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+  align-items: center;
+}
+
+.roleItemPathNode {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--tertiaryColor);
+}
+
+.roleItemPathLine {
+  width: 2px;
+  height: 100%;
+  background-color: var(--tertiaryColor);
+}
+
+.roleItemDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.roleItemType,
+.roleItemDate,
+.roleItemLocation {
+  font-size: 14px;
+}
+
+.roleItemDate,
+.roleItemLocation {
+  opacity: 0.75;
+}
+
+.roleItemDescription {
+  margin-top: 5px;
+  font-size: 14px;
+}

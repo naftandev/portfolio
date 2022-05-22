@@ -1,0 +1,32 @@
+.experienceItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--tertiaryColor);
+  }
+}
+
+.experienceItemCompany {
+  display: flex;
+  gap: 10px;
+
+  figure {
+    width: 50px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.experienceItemCompanyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.experienceItemRoles {
+  margin-left: 21px;
+}
