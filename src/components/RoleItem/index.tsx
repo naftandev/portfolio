@@ -12,9 +12,9 @@ const RoleItem: FC<RoleItemTypes> = ({ name, type, date, location, description }
       <strong className={styles.roleItemName}>{name}</strong>
       <span className={styles.roleItemType}>{type}</span>
       <p className={styles.roleItemDate}>
-        {`${date.startMonth} ${date.startYear} - ${date.endMonth && date.endYear ? `${date.endMonth} ${date.endYear}` : 'Present'}`}
+        {/*`${new Date(date.start).get} - ${date.endMonth && date.endYear ? `${date.endMonth} ${date.endYear}` : 'Present'}`*/}
       </p>
-      <span className={styles.roleItemLocation}>{location}</span>
+      <span className={styles.roleItemLocation}>{`${location.country}, ${location.city}`}</span>
       <p className={styles.roleItemDescription}>{description}</p>
     </div>
   </div>

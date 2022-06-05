@@ -37,8 +37,11 @@
     justify-content: flex-end;
 
     .aboutSocialNetwork {
-      height: 20px;
-      filter: invert(1);
+      width: 20px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 

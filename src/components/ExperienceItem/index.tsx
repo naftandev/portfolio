@@ -3,17 +3,16 @@ import { FC } from 'react'
 import { ExperienceItemTypes } from '../../types/components'
 
 import RoleItem from '../RoleItem'
-import getS3Statics from '../../utils/getS3Statics'
 
-const ExperienceItem: FC<ExperienceItemTypes> = ({ companyName, companyLogoPath, roles }) => (
+const ExperienceItem: FC<ExperienceItemTypes> = ({ companyName, companyLogo, seniority, roles }) => (
   <div className={styles.experienceItem}>
     <div className={styles.experienceItemCompany}>
       <figure>
-        <img src={getS3Statics({ groupName: 'images', filePath: companyLogoPath })} alt={companyName} />
+        <img src={companyLogo} alt={companyName} />
       </figure>
       <div className={styles.experienceItemCompanyInfo}>
         <strong>{companyName}</strong>
-        <span>-- months</span>
+        <span>{seniority}</span>
       </div>
     </div>
     <div className={styles.experienceItemRoles}>

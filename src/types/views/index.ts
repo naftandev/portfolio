@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction, FormEventHandler } from 'react'
 import { ExperienceItemTypes } from '../components'
 
 export interface ExperienceUITypes {
-  jobPositions: ExperienceItemTypes[]
+  jobs: ExperienceItemTypes[]
 }
 
 export interface FormDataTypes {

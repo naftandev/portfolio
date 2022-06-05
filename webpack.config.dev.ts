@@ -1,6 +1,6 @@
 /// <reference path="node_modules/webpack-dev-server/types/lib/Server.d.ts"/>
 import path from 'path'
-import { Configuration, HotModuleReplacementPlugin, ProvidePlugin,  } from 'webpack'
+import { Configuration, ProvidePlugin } from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import Dotenv from 'dotenv-webpack'
@@ -9,9 +9,7 @@ const config: Configuration = {
   mode: 'development',
   devtool: 'source-map',
   entry: {
-    app: './src/index.tsx',
-    hot: 'webpack/hot/dev-server.js',
-    client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true'
+    app: './src/index.tsx'
   },
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -72,7 +70,6 @@ const config: Configuration = {
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].css'
     }),
-    new HotModuleReplacementPlugin(),
     new Dotenv({
       safe: true
     })
@@ -83,6 +80,7 @@ const config: Configuration = {
   devServer: {
     port: 3000,
     compress: true,
+    hot: true,
     open: true
   }
 }

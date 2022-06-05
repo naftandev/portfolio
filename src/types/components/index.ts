@@ -5,27 +5,28 @@ export interface SectionTitleTypes {
 export interface ProjectCardTypes {
   title: string
   description: string
-  picturePath: string
+  picture: string
   url: string
-  externalLinkIconTheme: string
-  topPosition?: number
+  theme: string
 }
 
 export interface RoleItemTypes {
   name: string
   type: string
   date: {
-    startMonth: number
-    startYear: number
-    endMonth?: number
-    endYear?: number
+    start: string
+    end?: string
   }
-  location: string
+  location: {
+    country: string
+    city: string
+  }
   description: string
 }
 
 export interface ExperienceItemTypes {
   companyName: string
-  companyLogoPath: string
+  companyLogo: string
+  seniority: number
   roles: RoleItemTypes[]
 }
